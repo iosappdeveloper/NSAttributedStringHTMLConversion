@@ -29,10 +29,15 @@
 - (IBAction)convertActionWithBtn:(UIButton *)sender
 {
     if ([sender isEqual:self.htmlBtn]) {    // To HTML
-        self.htmlTextView.text = [self.richTextView.attributedText ab_encodedHTMLString];
+
+        if (self.richTextView.text.length > 0) {
+            self.htmlTextView.text = [self.richTextView.attributedText ab_encodedHTMLString];
+        }
+
     }
     else if ([sender isEqual:self.richTextBtn]) { // To Rich text
         NSString *htmlText = self.htmlTextView.text;
+
         if (htmlText.length > 0) {
             // Generate attributed string from plain HTML
             NSAttributedString *attribText = [[NSAttributedString alloc] initWithData:[htmlText dataUsingEncoding:NSUTF16StringEncoding]
@@ -41,6 +46,7 @@
 
             self.richTextView.attributedText = attribText;
         }
+        
     }
 }
 
