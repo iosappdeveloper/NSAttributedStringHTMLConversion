@@ -15,13 +15,16 @@
 		2EFB58B219991CC000733B1F /* ABAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFB58B119991CC000733B1F /* ABAppDelegate.m */; };
 		2EFB58B519991CC000733B1F /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EFB58B319991CC000733B1F /* Main_iPhone.storyboard */; };
 		2EFB58B819991CC000733B1F /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EFB58B619991CC000733B1F /* Main_iPad.storyboard */; };
-		2EFB58BB19991CC000733B1F /* ABViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFB58BA19991CC000733B1F /* ABViewController.m */; };
+		2EFB58BB19991CC000733B1F /* ABConversionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFB58BA19991CC000733B1F /* ABConversionViewController.m */; };
 		2EFB58BD19991CC000733B1F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EFB58BC19991CC000733B1F /* Images.xcassets */; };
 		2EFB58C419991CC000733B1F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFB58C319991CC000733B1F /* XCTest.framework */; };
 		2EFB58C519991CC000733B1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFB58A119991CC000733B1F /* Foundation.framework */; };
 		2EFB58C619991CC000733B1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFB58A519991CC000733B1F /* UIKit.framework */; };
 		2EFB58CE19991CC000733B1F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2EFB58CC19991CC000733B1F /* InfoPlist.strings */; };
 		2EFB58D019991CC000733B1F /* NSAttributedStringHTMLConversionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFB58CF19991CC000733B1F /* NSAttributedStringHTMLConversionTests.m */; };
+		2EFB58DE199921D900733B1F /* QGRichTextTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFB58DC199921D900733B1F /* QGRichTextTag.m */; };
+		2EFB58E4199923C600733B1F /* UIFont+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFB58E3199923C600733B1F /* UIFont+HTML.m */; };
+		2EFB58E51999288600733B1F /* NSAttributedString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFB58E01999228100733B1F /* NSAttributedString+HTML.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,14 +50,20 @@
 		2EFB58B119991CC000733B1F /* ABAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABAppDelegate.m; sourceTree = "<group>"; };
 		2EFB58B419991CC000733B1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		2EFB58B719991CC000733B1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		2EFB58B919991CC000733B1F /* ABViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABViewController.h; sourceTree = "<group>"; };
-		2EFB58BA19991CC000733B1F /* ABViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABViewController.m; sourceTree = "<group>"; };
+		2EFB58B919991CC000733B1F /* ABConversionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABConversionViewController.h; sourceTree = "<group>"; };
+		2EFB58BA19991CC000733B1F /* ABConversionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABConversionViewController.m; sourceTree = "<group>"; };
 		2EFB58BC19991CC000733B1F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2EFB58C219991CC000733B1F /* NSAttributedStringHTMLConversionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSAttributedStringHTMLConversionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EFB58C319991CC000733B1F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2EFB58CB19991CC000733B1F /* NSAttributedStringHTMLConversionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSAttributedStringHTMLConversionTests-Info.plist"; sourceTree = "<group>"; };
 		2EFB58CD19991CC000733B1F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2EFB58CF19991CC000733B1F /* NSAttributedStringHTMLConversionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSAttributedStringHTMLConversionTests.m; sourceTree = "<group>"; };
+		2EFB58DB199921D900733B1F /* QGRichTextTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QGRichTextTag.h; path = Models/QGRichTextTag.h; sourceTree = "<group>"; };
+		2EFB58DC199921D900733B1F /* QGRichTextTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QGRichTextTag.m; path = Models/QGRichTextTag.m; sourceTree = "<group>"; };
+		2EFB58DF1999228100733B1F /* NSAttributedString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+HTML.h"; path = "Models/NSAttributedString+HTML.h"; sourceTree = "<group>"; };
+		2EFB58E01999228100733B1F /* NSAttributedString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+HTML.m"; path = "Models/NSAttributedString+HTML.m"; sourceTree = "<group>"; };
+		2EFB58E2199923C600733B1F /* UIFont+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+HTML.h"; path = "Models/UIFont+HTML.h"; sourceTree = "<group>"; };
+		2EFB58E3199923C600733B1F /* UIFont+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+HTML.m"; path = "Models/UIFont+HTML.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,12 +123,13 @@
 		2EFB58A719991CC000733B1F /* NSAttributedStringHTMLConversion */ = {
 			isa = PBXGroup;
 			children = (
+				2EFB58D9199921A300733B1F /* Models */,
 				2EFB58B019991CC000733B1F /* ABAppDelegate.h */,
 				2EFB58B119991CC000733B1F /* ABAppDelegate.m */,
 				2EFB58B319991CC000733B1F /* Main_iPhone.storyboard */,
 				2EFB58B619991CC000733B1F /* Main_iPad.storyboard */,
-				2EFB58B919991CC000733B1F /* ABViewController.h */,
-				2EFB58BA19991CC000733B1F /* ABViewController.m */,
+				2EFB58B919991CC000733B1F /* ABConversionViewController.h */,
+				2EFB58BA19991CC000733B1F /* ABConversionViewController.m */,
 				2EFB58BC19991CC000733B1F /* Images.xcassets */,
 				2EFB58A819991CC000733B1F /* Supporting Files */,
 			);
@@ -153,6 +163,19 @@
 				2EFB58CC19991CC000733B1F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2EFB58D9199921A300733B1F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2EFB58DB199921D900733B1F /* QGRichTextTag.h */,
+				2EFB58DC199921D900733B1F /* QGRichTextTag.m */,
+				2EFB58DF1999228100733B1F /* NSAttributedString+HTML.h */,
+				2EFB58E01999228100733B1F /* NSAttributedString+HTML.m */,
+				2EFB58E2199923C600733B1F /* UIFont+HTML.h */,
+				2EFB58E3199923C600733B1F /* UIFont+HTML.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,9 +277,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EFB58E51999288600733B1F /* NSAttributedString+HTML.m in Sources */,
 				2EFB58AE19991CC000733B1F /* main.m in Sources */,
-				2EFB58BB19991CC000733B1F /* ABViewController.m in Sources */,
+				2EFB58E4199923C600733B1F /* UIFont+HTML.m in Sources */,
+				2EFB58BB19991CC000733B1F /* ABConversionViewController.m in Sources */,
 				2EFB58B219991CC000733B1F /* ABAppDelegate.m in Sources */,
+				2EFB58DE199921D900733B1F /* QGRichTextTag.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

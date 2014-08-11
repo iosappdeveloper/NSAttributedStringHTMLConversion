@@ -1,13 +1,15 @@
 //
-//  ABViewController.h
+//  NSAttributedString+HTML.h
 //  NSAttributedStringHTMLConversion
 //
 //  Created by Matoria, Ashok on 8/11/14.
 //  Copyright (c) 2014 iOSAppDeveloper. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface ABViewController : UIViewController
+@interface NSAttributedString (HTML)
+
+- (NSString *)ab_encodedHTMLString;
 
 @end
